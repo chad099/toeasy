@@ -21,11 +21,14 @@ Code Examples In Core PHP
 
 //Call Autoload classes include('vendor/autoload.php');
 
+//Include this in alias
+'ToEasy' => 'Shekhar\ToEasy\Facades\ToEasy',
+
 use ToEasy\ToEasy\ToEasy;
 
 echo ToEasy::rand(6); ?>
 License
 
-SoapEasy is licensed under the MIT License.
+ToEasy is licensed under the MIT License.
 
 Copyright 2014 shekhar singh
