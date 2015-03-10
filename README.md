@@ -1,9 +1,9 @@
 ToEasy
-
+------
 Stop to create dummy function just call it.
 
 Requirements
-
+-----------
 PHP >=5.3 Installation
 Install using composer:
 
@@ -16,7 +16,7 @@ Add in composer.json
 }
 
 Code Examples In Core PHP
-
+------------------------
 <?php
 
 //Call Autoload classes include('vendor/autoload.php');
