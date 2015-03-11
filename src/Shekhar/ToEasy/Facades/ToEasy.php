@@ -11,8 +11,21 @@ class ToEasy extends Facade {
      */
     protected static function getFacadeAccessor() { return 'ToEasy'; }
 
-	public static function rand($length){
-			$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-			return substr(str_shuffle($chars),0,$length);
+	public static function rand($length, $type=null){
+			switch($type){
+				case 'charL':
+					$chars = "abcdefghijklmnopqrstuvwxyz";
+					break;
+				case 'charU':
+					$chars ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+					break;
+				case 'numbers':
+					$chars ="0123456789";
+					break;	
+				default:
+					$chars ="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+					break;		
+			}
+				return substr(str_shuffle($chars),0,$length);
 	   }
 }

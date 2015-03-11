@@ -25,8 +25,9 @@ Code Examples In Core PHP
 'ToEasy' => 'Shekhar\ToEasy\Facades\ToEasy',
 
 use ToEasy\ToEasy\ToEasy;
+// type= numbers, charU(characters in upper case), charL(characters in lower case)
+echo ToEasy::rand(6, 'type'); ?>
 
-echo ToEasy::rand(6); ?>
 License
 
 ToEasy is licensed under the MIT License.
